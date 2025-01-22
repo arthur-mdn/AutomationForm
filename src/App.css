@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  color: #007BFF;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question h2 {
+  font-size: 1.5rem;
+  color: #333333;
+}
+
+.radio-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.radio-card {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio-card:hover {
+  border-color: #007BFF;
+  background-color: #e7f3ff;
+}
+
+.radio-card input {
+  display: none;
+}
+
+.radio-card.active {
+  border-color: #007BFF;
+  background-color: #e7f3ff;
+  font-weight: bold;
+}
+
+textarea,
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  border-color: #007BFF;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.3);
+}
+
+button {
+  display: inline-block;
+  background-color: #007BFF;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.response {
+  border-radius: 8px;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+.response strong {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.response .faisabilite {
+  color: #007BFF;
+}
+
+.response .justification {
+  color: #28A745;
+}
+
+.response .suggestions {
+  color: #FFC107;
+}
